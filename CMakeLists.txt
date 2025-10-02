@@ -6,3 +6,7 @@ project(BattleCity) #дает имя проекту
 #первый аргумент - это название собираемоего проекта, остальные исходные файлы *.h *.cpp
 #все аргументы записываются через пробел
 add_executable(BattleCity src/main.cpp) 
+
+add_subdirectory(external/glfw)
+
+target_link_libraries(BattleCity glfw)
